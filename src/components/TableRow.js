@@ -56,7 +56,7 @@ if (check==='mktcap') {
   <thead>
     <tr>{heading.map((item,i)=><th key={'heading'+i}>{item}</th>)}</tr>
   </thead>
-  {!data && <tr><td colSpan={8} style={{textAlign:'center'}}>Loading...</td></tr>}
+  {!data && <tr><td colSpan={8} style={{textAlign:'center',padding:'10px'}}>Loading...</td></tr>}
   {data && <tbody>
   {newData.map((item,i)=><tr key={'coin'+i}>
     <td><img src={item.image} style={{width:'2rem',height:'2rem'}} alt='coin-img' /></td>
